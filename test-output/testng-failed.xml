@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Sauce Las Test automtion regression suite]" guice-stage="DEVELOPMENT" verbose="3">
+  <test thread-count="3" parallel="tests" name="Sauce Test - Chrome(failed)" verbose="3">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="85.0"/>
+    <parameter name="platform" value="macOS 10.15"/>
+    <classes>
+      <class name="com.Selenium_SauceLab_Project.test.SauceTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkInventoryItemTest"/>
+          <include name="checkAddToCartButtonTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Selenium_SauceLab_Project.test.SauceTests -->
+    </classes>
+  </test> <!-- Sauce Test - Chrome(failed) -->
+  <test thread-count="3" parallel="tests" name="Sauce Test - FF(failed)" verbose="3">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="79.0"/>
+    <parameter name="platform" value="windows 10"/>
+    <classes>
+      <class name="com.Selenium_SauceLab_Project.test.SauceTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkInventoryItemTest"/>
+          <include name="checkAddToCartButtonTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Selenium_SauceLab_Project.test.SauceTests -->
+    </classes>
+  </test> <!-- Sauce Test - FF(failed) -->
+</suite> <!-- Failed suite [Sauce Las Test automtion regression suite] -->
